@@ -1,0 +1,107 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>CalTip</title>
+</head>
+
+<body>
+<div class="container-fluid">
+    <div class="head">
+        <h1><b>TIP CALCULATOR</b></h1>
+    </div>
+    <br><br>
+    <form>
+        <p><b>Bill Amount : </b>
+        <input type="number" id="amount" placeholder=" Enter Bill Amount" maxlength="10">
+        </p>
+        
+        <p><b>Tip Percentage :</b>
+        <input type="number" name="tip" id="tip"><b> %</b>
+        </p>
+        
+        <p><b>No. of Persons sharing the Bill</b>
+        <select id="numberPeople">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option value="24">24</option>
+            <option value="25">25</option>
+            <option value="26">26</option>
+            <option value="27">27</option>
+            <option value="28">28</option>
+            <option value="29">29</option>
+            <option value="30">30</option>
+            <option value="31">31</option>
+            <option value="32">32</option>
+            <option value="33">33</option>
+            <option value="34">34</option>
+            <option value="35">35</option>
+            <option value="36">36</option>
+            <option value="37">37</option>
+            <option value="38">38</option>
+            <option value="39">39</option>
+            <option value="40">40</option>        
+            <option value="41">41</option>
+            <option value="42">42</option>
+            <option value="43">43</option>
+            <option value="44">44</option>
+            <option value="45">45</option>
+            <option value="46">46</option>
+            <option value="47">47</option>
+            <option value="48">48</option>
+            <option value="49">49</option>
+            <option value="50">50</option>
+        </select>
+        </p>
+    </form>
+    <button class="calc" onclick="calculateTip()">Calculate</button>
+    <div id="single">
+        <p><b>Tip : Rs <span id=tipAmount></span></b></p>
+        <p><b>Total : Rs <span id="billTotal"></span></b></p>
+    </div>
+    <div id="multiple">
+        <p><b>Tip Per Person: Rs. <span id="TipMultiple"></span></b></p>
+        <p><b>Total Tip : Rs <span id="tipMul"></span></b></p>
+        <p><b>Total Per Person: Rs.<span id="totalAmountEach"></span></b></p>
+        <p><b>Bill Total: Rs.<span id="billTotalMultiple"></span></b></p>
+    </div>
+</div> 
+
+<footer class="note">
+    <div class="trybox"><b> MUST TRY </b></div>
+    <div id="extrapara">
+    <ul>
+        <li>Try not to fill <b>Bill Amount</b></li>
+        <li>Try not to fill <b>Tip Percentage</b></li>
+        <li>Try to fill <b>Bill Amount</b> in negative(-)</li>
+        <li>Try to fill <b>Tip Percentage</b> in negative (-)</li>
+    </ul>
+    </div>
+</footer>
+
+<script src="js\script.js"></script>
+</body>
+</html>
